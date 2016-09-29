@@ -1,0 +1,19 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="projectDetailsDAO" class="com.manh.dao.impl.ProjectDetailsDaoImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	
+	<bean id="leavePlannerDAO" class="com.manh.dao.impl.LeavePlannerDaoImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	
+	<bean id="cstCheckListDAO" class="com.manh.dao.impl.CSTCheckListDaoImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	
+	<bean id="resourceUtilization" class="com.manh.service.impl.ResourceUtilizationServiceImpl"/>	
+</beans>

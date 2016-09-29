@@ -1,0 +1,12 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+        <property name="url" value="jdbc:oracle:thin:@10.80.16.112:2626:EMEA11R2A"></property>
+		<property name="username" value="UARCWMOS2014RU07DEVL" />
+		<property name="password" value="UARCWMOS2014RU07DEVL" />
+	</bean>
+</beans>

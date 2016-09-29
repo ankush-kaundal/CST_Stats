@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+      "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+      "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+<tiles-definitions>  
+ 
+   <!-- Base Define -->
+   <definition name="base.definition" template="/WEB-INF/layouts/classic.jsp">  
+       <put-attribute name="title" value="" />  
+       <put-attribute name="header" value="/WEB-INF/basefragments/_header.jsp" />  
+       <put-attribute name="menu" value="/WEB-INF/basefragments/_menu.jsp" />  
+       <put-attribute name="body" value="" />  
+       <put-attribute name="footer" value="/WEB-INF/basefragments/_footer.jsp" />  
+   </definition>  
+ 
+   <!-- Home Page -->
+   <definition name="homePage" extends="base.definition">  
+       <put-attribute name="title" value="Home Page" />  
+       <put-attribute name="body" value="/WEB-INF/bodyfragments/_home.jsp" />  
+   </definition>  
+      
+   <!-- ContactUs Page -->
+   <definition name="contactusPage" extends="base.definition">  
+       <put-attribute name="title" value="Contact Us" />  
+       <put-attribute name="body" value="/WEB-INF/bodyfragments/_contactus.jsp" />  
+   </definition>  
+ 
+   <!-- Project Details -->
+   <definition name="projectDetailsPage" extends="base.definition">  
+       <put-attribute name="title" value="Project Details" />  
+       <put-attribute name="body" value="/WEB-INF/bodyfragments/ProjectDetails.jsp" />  
+   </definition>
+   
+   <!-- Leave Planner -->
+   <definition name="LeavePlannerPage" extends="base.definition">  
+       <put-attribute name="title" value="Leave Planner" />  
+       <put-attribute name="body" value="/WEB-INF/bodyfragments/LeavePlanner.jsp" />  
+   </definition>  
+   
+   <!-- Appled Leave Page -->
+   <definition name="ViewAppliedLeavePage" extends="base.definition">  
+       <put-attribute name="title" value="Applied Leave" />  
+       <put-attribute name="body" value="/WEB-INF/bodyfragments/ViewAppliedLeave.jsp" />  
+   </definition>   
+ 
+   <!-- Overview -->
+   <definition name="OverviewPage" extends="base.definition">  
+       <put-attribute name="title" value="Overview" />  
+       <put-attribute name="body" value="/WEB-INF/bodyfragments/_home.jsp" />  
+   </definition> 
+   
+   <!-- CST Check List -->
+   <definition name="CSTCheckList" extends="base.definition">  
+       <put-attribute name="title" value="CST Check List" />  
+       <put-attribute name="body" value="/WEB-INF/bodyfragments/CSTCheckList.jsp" />  
+   </definition>  
+   
+   <definition name="MinutesOfMeeting" extends="base.definition">  
+       <put-attribute name="title" value="Minutes Of Meeting" />  
+       <put-attribute name="body" value="/WEB-INF/bodyfragments/MinutesOfMeeting.jsp" />  
+   </definition>
+   
+   <definition name="index" extends="base.definition">  
+       <put-attribute name="title" value="Login Page" />  
+       <put-attribute name="body" value="/index.jsp" />  
+   </definition> 
+ 
+ 	<!-- View Resource Utilization -->
+   <definition name="ResourceUtilization" extends="base.definition">  
+       <put-attribute name="title" value="Resource Utilization" />  
+       <put-attribute name="body" value="/WEB-INF/bodyfragments/ResourceUtilization.jsp" />  
+   </definition> 
+ 
+</tiles-definitions>
