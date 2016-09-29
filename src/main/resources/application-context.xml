@@ -15,5 +15,9 @@ http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 		<property name="dataSource" ref="dataSource" />
 	</bean>
 	
-	<bean id="resourceUtilization" class="com.manh.service.impl.ResourceUtilizationServiceImpl"/>	
+	<bean id="resourceUtilization" class="com.manh.service.impl.ResourceUtilizationServiceImpl"/>
+		
+	<bean id="userDetailsDao" class="com.manh.dao.impl.UserDetailsDaoImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
 </beans>

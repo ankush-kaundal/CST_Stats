@@ -5,7 +5,8 @@
 <tiles-definitions>  
  
    <!-- Base Define -->
-   <definition name="base.definition" template="/WEB-INF/layouts/classic.jsp">  
+   <definition name="base.definition" 
+       template="/WEB-INF/layouts/classic.jsp">  
        <put-attribute name="title" value="" />  
        <put-attribute name="header" value="/WEB-INF/basefragments/_header.jsp" />  
        <put-attribute name="menu" value="/WEB-INF/basefragments/_menu.jsp" />  
@@ -13,6 +14,23 @@
        <put-attribute name="footer" value="/WEB-INF/basefragments/_footer.jsp" />  
    </definition>  
  
+   <!-- Login Page -->
+   <definition name="loginPage" extends="base.definition">  
+       <put-attribute name="title" value="Login Page" />  
+       <put-attribute name="header" value="" />
+       <put-attribute name="menu" value="" /> 
+       <put-attribute name="footer" value="" />  
+       <put-attribute name="body" value="/WEB-INF/bodyfragments/LoginPage.jsp" />  
+   </definition>
+   
+   <!-- Create User Page -->
+   <definition name="createUserPage" extends="base.definition">  
+       <put-attribute name="title" value="Login Page" />  
+       <put-attribute name="header" value="" />
+       <put-attribute name="menu" value="" /> 
+       <put-attribute name="footer" value="" />  
+       <put-attribute name="body" value="/WEB-INF/bodyfragments/CreateAccount.jsp" />  
+   </definition>
    <!-- Home Page -->
    <definition name="homePage" extends="base.definition">  
        <put-attribute name="title" value="Home Page" />  
@@ -55,17 +73,14 @@
        <put-attribute name="body" value="/WEB-INF/bodyfragments/CSTCheckList.jsp" />  
    </definition>  
    
+   
    <definition name="MinutesOfMeeting" extends="base.definition">  
        <put-attribute name="title" value="Minutes Of Meeting" />  
        <put-attribute name="body" value="/WEB-INF/bodyfragments/MinutesOfMeeting.jsp" />  
    </definition>
    
-   <definition name="index" extends="base.definition">  
-       <put-attribute name="title" value="Login Page" />  
-       <put-attribute name="body" value="/index.jsp" />  
-   </definition> 
  
- 	<!-- View Resource Utilization -->
+   <!-- View Resource Utilization -->
    <definition name="ResourceUtilization" extends="base.definition">  
        <put-attribute name="title" value="Resource Utilization" />  
        <put-attribute name="body" value="/WEB-INF/bodyfragments/ResourceUtilization.jsp" />  

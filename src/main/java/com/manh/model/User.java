@@ -1,15 +1,8 @@
 package com.manh.model;
 
-import javax.validation.constraints.Size;
-import org.hibernate.validator.constraints.NotEmpty;
- 
-
 public class User {
-    @NotEmpty
-    private String userName, userEmailId;
-     
-    @NotEmpty(message = "Please enter your password.")
-    @Size(min = 6, max = 15, message = "Your password must between 6 and 15 characters")
+    private String userName;
+    private String userEmailId;
     private String password;
  
     public String getUserName() {

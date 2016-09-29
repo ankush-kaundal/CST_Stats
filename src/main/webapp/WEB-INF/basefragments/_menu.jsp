@@ -15,7 +15,7 @@
 				style="width: 46px">
 		</div>
 		<div class="w3-col s8">
-			<span>Welcome, <strong>${loginForm.userName}</strong></span><br>
+			<span>Welcome, <strong>${welcomeUserName}</strong></span><br>
 			<a href="#"
 				class="w3-hover-none w3-hover-text-red w3-show-inline-block"><i
 				class="fa fa-envelope"></i></a> <a href="#"
@@ -29,8 +29,8 @@
 	<ul>
 		<%-- <li><a href="${pageContext.request.contextPath}/">Home</a></li><br>
 		<li><a href="${pageContext.request.contextPath}/contactus">Contact Us</a></li><br> --%>
-		<li><a href="${pageContext.request.contextPath}/form_form">Overview</a></li><br>
-		<li><a href="${pageContext.request.contextPath}/">Weekly</a></li><br>
+		<li><a href="${pageContext.request.contextPath}/default">Overview</a></li><br>
+		<li><a href="${pageContext.request.contextPath}/default">Weekly</a></li><br>
 		<li><a href="${pageContext.request.contextPath}/projectDetails">Project Details</a></li><br>
 		
 		<li ><a href="${pageContext.request.contextPath}/leavePlanner">Leave Planner</a></li>
@@ -43,7 +43,7 @@
 		<li><a href="${pageContext.request.contextPath}/">Seat Allocation Link</a></li><br>
 		<li><a href="${pageContext.request.contextPath}/resourceUtilization">Resource Utilization</a></li><br>
 		<li><a href="${pageContext.request.contextPath}/minutesOfMeeting">Minutes of Meeting</a></li><br>
-		<li><a href="${pageContext.request.contextPath}/">Upcoming Events</a></li><br>
+		<li><a href="${pageContext.request.contextPath}/default">Upcoming Events</a></li><br>
 
 	</ul>
 </div>
