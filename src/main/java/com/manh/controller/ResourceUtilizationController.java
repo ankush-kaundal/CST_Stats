@@ -23,7 +23,7 @@ public class ResourceUtilizationController {
 	private final static org.slf4j.Logger logger = LoggerFactory.getLogger(ResourceUtilizationController.class);
 
     @RequestMapping(value = "/resourceUtilization", method = {RequestMethod.GET})
-    public ModelAndView getAllAppliedLeave() {
+    public ModelAndView getResourceUtilization() {
 		ModelAndView model = new ModelAndView();		
 		Map<String, String> miscDataMap = new HashMap<String, String>();
 		Map<String, ResourceUtilization> resourceDataMap = getService().readExcelFile(miscDataMap);
@@ -44,9 +44,20 @@ public class ResourceUtilizationController {
 		
 		getService().submitUtilizationRequest(fromDate, toDate);
 		model.addAttribute("submitResponse", "Please wait...");
+		
+		
+		
+		Map<String, String> miscDataMap = new HashMap<String, String>();
+		Map<String, ResourceUtilization> resourceDataMap = getService().readExcelFile(miscDataMap);
+//		model.setViewName(RESOURCE_UTILIZATION_PAGE);
+		model.addObject("resourceDataMap", resourceDataMap);
+		model.addObject("miscDataMap", miscDataMap);
+		model.addObject("fromDate", miscDataMap.get("monthFrom")+"/"+miscDataMap.get("dayFrom")+"/"+miscDataMap.get("yearFrom"));
+		model.addObject("toDate", miscDataMap.get("monthTo")+"/"+miscDataMap.get("dayTo")+"/"+miscDataMap.get("yearTo"));
+		
+		
 		return RESOURCE_UTILIZATION_PAGE;
     }
-    
     
     private IResourceUtilizationService getService(){
     	ApplicationContext context = new ClassPathXmlApplicationContext("Spring-Module.xml");
