@@ -63,36 +63,10 @@ public class LeavePlannerDaoImpl implements ILeavePlannerDao {
 		}
     }
 	
-	public int getNextupValue(String sequenceName){
-		Connection conn = null;
-		ResultSet rs = null ;
-		Statement sqlStatement = null ;
-		int nextvalue = 0;
 		
-		try {
-			conn = dataSource.getConnection();
 			
-			String nextupQuery = "select " + sequenceName + ".NEXTVAL FROM dual"; 
-			sqlStatement = conn.createStatement() ;
-			rs = sqlStatement.executeQuery(nextupQuery) ;
-			rs.next() ;
-			nextvalue = rs.getInt(1) ;
 			
-			rs.close();
-		    sqlStatement.close();
-		    conn.close();
-		} catch (SQLException e) {
-			throw new RuntimeException(e);
-		} finally {
-			if (conn != null) {
-				try {
-				conn.close();
-				} catch (SQLException e) {}
-			}
-		}
 		
-		return nextvalue;
-    }
 	
 	public List<LeavePlanner> getAllAppliedLeave(){
 		String sql = "select user_name,from_date,to_date,user_id from leave_planner order by user_name, from_date";

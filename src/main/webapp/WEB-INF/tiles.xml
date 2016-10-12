@@ -79,11 +79,22 @@
        <put-attribute name="body" value="/WEB-INF/bodyfragments/MinutesOfMeeting.jsp" />  
    </definition>
    
+   <definition name="Weekly" extends="base.definition">  
+       <put-attribute name="title" value="Weekly Page" />  
+       <put-attribute name="body" value="/WEB-INF/bodyfragments/Weekly.jsp" />  
+   </definition>
  
-   <!-- View Resource Utilization -->
-   <definition name="ResourceUtilization" extends="base.definition">  
-       <put-attribute name="title" value="Resource Utilization" />  
-       <put-attribute name="body" value="/WEB-INF/bodyfragments/ResourceUtilization.jsp" />  
+   <definition name="ViewWeekly" extends="base.definition">  
+       <put-attribute name="title" value="View Weekly Page" />  
+       <put-attribute name="body" value="/WEB-INF/bodyfragments/ViewWeekly.jsp" />  
+   </definition>
+   <definition name="SeatAllocationLink" extends="base.definition">  
+       <put-attribute name="title" value="Seat Allocation Link Page" />  
+       <put-attribute name="body" value="/WEB-INF/bodyfragments/SeatAllocationLink.jsp" />  
    </definition> 
  
+ 	<definition name="UpcomingEvents" extends="base.definition">  
+       <put-attribute name="title" value="Upcoming Events Page" />  
+       <put-attribute name="body" value="/WEB-INF/bodyfragments/UpcomingEvents.jsp" />  
+   </definition>
 </tiles-definitions>

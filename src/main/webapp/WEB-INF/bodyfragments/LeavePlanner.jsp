@@ -74,7 +74,8 @@ table.sample td {
 				<th style="font-size: 20"><input id="to" type="text" name="toDate" style="font-family: Arial;"  required ></th>
 			</tr>
 			<tr>
-				<th colspan='2' style="font-size: 20"><button>Submit</button></th>				
+				<th colspan='2' style="font-size: 20"><button style="cursor: pointer; box-shadow:  0px 2px 11px 0px rgba(0, 0, 0, 0.3); border: 1px solid #A8F1FF; 
+					border-radius: 5px; background-color:#444; color: #fff;  float: none; padding: 5px;">Submit</button></th>				
 			</tr>
 			<tr>
 				<th colspan='2' style="font-size: 20"><p id="submitResponse">${submitResponse}</p></th>				

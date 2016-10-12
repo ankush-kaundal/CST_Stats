@@ -20,4 +20,7 @@ http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 	<bean id="userDetailsDao" class="com.manh.dao.impl.UserDetailsDaoImpl">
 		<property name="dataSource" ref="dataSource" />
 	</bean>
+	<bean id="weeklyDAO" class="com.manh.dao.impl.WeeklyDaoImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
 </beans>

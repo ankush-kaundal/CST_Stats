@@ -19,7 +19,7 @@ public class UpcomingEventsController {
 	private static final String UPCOMING_EVENTS_PAGE = "UpcomingEvents";
 	private final static org.slf4j.Logger logger = LoggerFactory.getLogger(UpcomingEventsController.class);
 
-    @RequestMapping(value = "/upcomingEvents", method = RequestMethod.POST)
+    @RequestMapping(value = "/upcomingEvents", method = RequestMethod.GET)
     public String navidateToUpcomingEventsPage(@Valid @ModelAttribute("upcomingEventsPage") User userForm,
             BindingResult result, Map<String, Object> model) { 
         return UPCOMING_EVENTS_PAGE;

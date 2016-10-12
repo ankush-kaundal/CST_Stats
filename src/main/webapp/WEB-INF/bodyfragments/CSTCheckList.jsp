@@ -30,7 +30,8 @@
 				</c:forEach>
 			</select> <input type="hidden" id="projectCodeId" name="projectCode" />
 		
-		<button>Submit</button>
+		<button style="cursor: pointer; box-shadow:  0px 2px 11px 0px rgba(0, 0, 0, 0.3); border: 1px solid #A8F1FF; 
+					border-radius: 5px; background-color:#444; color: #fff;  float: none; padding: 5px;">Submit</button>
 	</form>
 	
 	<br>
@@ -293,7 +294,7 @@
 					<th colspan='3' align="center" style="background-color: LIGHTCORAL;">Check List</th>
 				</tr>
 				<tr>
-					<th width="20">Description</th>
+					<th>Description</th>
 					<th>Availability ?</th>
 					<th>Comments</th>
 				</tr>

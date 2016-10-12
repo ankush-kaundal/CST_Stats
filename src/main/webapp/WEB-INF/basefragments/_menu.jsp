@@ -30,20 +30,23 @@
 		<%-- <li><a href="${pageContext.request.contextPath}/">Home</a></li><br>
 		<li><a href="${pageContext.request.contextPath}/contactus">Contact Us</a></li><br> --%>
 		<li><a href="${pageContext.request.contextPath}/default">Overview</a></li><br>
-		<li><a href="${pageContext.request.contextPath}/default">Weekly</a></li><br>
-		<li><a href="${pageContext.request.contextPath}/projectDetails">Project Details</a></li><br>
+		<li><a href="${pageContext.request.contextPath}/cstChecklist">CST Checklist</a></li><br>
+		<li><a href="${pageContext.request.contextPath}/default">Resource Utilization</a></li><br>
 		
+		<li><a href="${pageContext.request.contextPath}/weekly">Weekly</a></li>
+		<ul>			
+			<li><a href="${pageContext.request.contextPath}/viewAllWeekly"> &nbsp;&nbsp;&nbsp;&nbsp; View
+					Weekly</a></li>
+		</ul><br>
 		<li ><a href="${pageContext.request.contextPath}/leavePlanner">Leave Planner</a></li>
 		<ul>			
 			<li><a href="${pageContext.request.contextPath}/viewAllAppliedLeave"> &nbsp;&nbsp;&nbsp;&nbsp; View
 					Leave</a></li>
-		</ul><br>
 				
-		<li><a href="${pageContext.request.contextPath}/cstChecklist">CST Checklist</a></li><br>		
-		<li><a href="${pageContext.request.contextPath}/">Seat Allocation Link</a></li><br>
-		<li><a href="${pageContext.request.contextPath}/resourceUtilization">Resource Utilization</a></li><br>
+		</ul><br><li><a href="${pageContext.request.contextPath}/projectDetails">Project Details</a></li><br>
 		<li><a href="${pageContext.request.contextPath}/minutesOfMeeting">Minutes of Meeting</a></li><br>
-		<li><a href="${pageContext.request.contextPath}/default">Upcoming Events</a></li><br>
+		<li><a href="${pageContext.request.contextPath}/seatAllocationLink">Seat Allocation Link</a></li><br>
+		<li><a href="${pageContext.request.contextPath}/upcomingEvents">Upcoming Events</a></li><br>
 
 	</ul>
 </div>

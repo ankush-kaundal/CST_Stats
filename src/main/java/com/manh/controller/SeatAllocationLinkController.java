@@ -19,7 +19,7 @@ public class SeatAllocationLinkController {
 	private static final String SEAT_ALLOCATION_LINK_PAGE = "SeatAllocationLink";
 	private final static org.slf4j.Logger logger = LoggerFactory.getLogger(SeatAllocationLinkController.class);
 
-    @RequestMapping(value = "/seatAllocationLink", method = RequestMethod.POST)
+    @RequestMapping(value = "/seatAllocationLink", method = RequestMethod.GET)
     public String navidateToSeatAllocationLinkPage(@Valid @ModelAttribute("seatAllocationLinkPage") User userForm,
             BindingResult result, Map<String, Object> model) { 
         return SEAT_ALLOCATION_LINK_PAGE;

@@ -1,17 +1,60 @@
 package com.manh.model;
 
 public class CSTCheckList {
-	private String projectName, projectCode, projectPlan, billingInformation, rmt, salesforceUsage,
-	onsiteTeamDetails, customerTeamDetails, environmentInfo, windowsVmBox,
-	vmImagePath, isWmMdaRepoSeperated, wmRepo, mdaRepo, gitInfo, modSpecs, techDoc, deliveryNote,
-	anyModsInProgress, anyModsInProgressCmnt, isTheProjectStatusRed, isTheProjectStatusRedCmnt, plannedGroupOfMods,
-	plannedGroupOfModsCmnt, goLiveDate, goLiveDateCmnt, modTestedOnClient, modTestedOnClientCmnt, numberOfOpenIssue,
-	numberOfOpenIssueCmnt, resourcHandoverPlanned, resourceHandoverPlannedCmnt, loggedHours, loggedHoursCmnt, vptPlanned, vptPlannedCmnt,
-	warehouseFlowDocument, warehouseFlowDocumentCmnt, versionRollupInfo, versionRollupInfoCmnt, modVsEnvMapping, modVsEnvMappingCmnt,
-	buildInSync, buildInSyncCmnt, listOfSfCase, listOfSfCaseCmnt, configDocForMod, configDocForModCmnt, buildBoxInSync,
-	buildBoxInSyncCmnt,addCstManagerNetsteps,sdnProcessDocumented,sdnProcessDocumentedCmnt, ktForMod, ktForModCmnt,
-	fixPackCreationProcess, fixPackCreationProcessCmnt, testScriptsInMamatters, testScriptsInMamattersCmnt, resourceHandover,
-	resourceHandoverCmnt, jiraMentionedInSf, jiraMentionedInSfCmnt;
+	private String projectName;
+	private String projectCode;
+	private String projectPlan;
+	private String billingInformation;
+	private String rmt;
+	private String salesforceUsage, onsiteTeamDetails;
+	private String customerTeamDetails;
+	private String environmentInfo;
+	private String windowsVmBox, vmImagePath;
+	private String isWmMdaRepoSeperated;
+	private String wmRepo;
+	private String mdaRepo;
+	private String gitInfo;
+	private String modSpecs;
+	private String techDoc;
+	private String deliveryNote, anyModsInProgress;
+	private String anyModsInProgressCmnt;
+	private String isTheProjectStatusRed;
+	private String isTheProjectStatusRedCmnt;
+	private String plannedGroupOfMods, plannedGroupOfModsCmnt;
+	private String goLiveDate;
+	private String goLiveDateCmnt;
+	private String modTestedOnClient;
+	private String modTestedOnClientCmnt;
+	private String numberOfOpenIssue, numberOfOpenIssueCmnt;
+	private String resourcHandoverPlanned;
+	private String resourceHandoverPlannedCmnt;
+	private String loggedHours;
+	private String loggedHoursCmnt;
+	private String vptPlanned;
+	private String vptPlannedCmnt, warehouseFlowDocument;
+	private String warehouseFlowDocumentCmnt;
+	private String versionRollupInfo;
+	private String versionRollupInfoCmnt;
+	private String modVsEnvMapping;
+	private String modVsEnvMappingCmnt, buildInSync;
+	private String buildInSyncCmnt;
+	private String listOfSfCase;
+	private String listOfSfCaseCmnt;
+	private String configDocForMod;
+	private String configDocForModCmnt;
+	private String buildBoxInSync;
+	private String buildBoxInSyncCmnt;
+	private String addCstManagerNetsteps;
+	private String sdnProcessDocumented;
+	private String sdnProcessDocumentedCmnt;
+	private String ktForMod;
+	private String ktForModCmnt, fixPackCreationProcess;
+	private String fixPackCreationProcessCmnt;
+	private String testScriptsInMamatters;
+	private String testScriptsInMamattersCmnt;
+	private String resourceHandover, resourceHandoverCmnt;
+	private String jiraMentionedInSf;
+	private String jiraMentionedInSfCmnt;
 
 	public String getProjectPlan() {
 		return projectPlan;
