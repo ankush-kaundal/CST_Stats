@@ -44,8 +44,9 @@
 			<input type = "hidden" name = "clientHours" value = "111111" />
 			<button onclick="progress(80, $('#progressBar'));" id="fetchButton">Fetch data</button>
 		</form>	
+		<!-- <div id="progress" style="display: none"><img src="/resources/style/ajax-loader.gif"></div> -->
 		<br/>
-			 <label>Quick Search: <input id="search" type="text" ></label>
+		<div id="quickSearch"><label>Quick Search: <input id="search" type="text" ></label></div>
 		<div style="width: 900px; height: 700px; overflow: auto" id="effect">
 			<table class="sample" style="width: 880px; display: table"
 				id="keywords1">
@@ -142,11 +143,11 @@
 			});
 		});
 
-		$(function() {
+		/* $(function() {
 			$("#search").autocomplete({
 				source : availableTags
 			});
-		});
+		}); */
 		
 		
 		$(function() {
@@ -164,6 +165,8 @@
 
 				// Run the effect
 				$("#effect").toggle(selectedEffect, options, 500);
+				$("#quickSearch").toggle(selectedEffect, options, 500);
+				document.getElementById('progress').style.display = 'block';
 			}
 			;
 
