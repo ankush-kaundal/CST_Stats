@@ -5,9 +5,6 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.nio.file.FileSystems;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -207,20 +204,19 @@ public class ResourceUtilizationServiceImpl implements IResourceUtilizationServi
 	         
 	         file.close();
 
-	         FileOutputStream outFile =new FileOutputStream(new File(FILE_PATH_TEMP_FILE));
+	         FileOutputStream outFile = new FileOutputStream(new File(FILE_PATH_TEMPLATE_FILE));
 	         workbook.write(outFile);
 	         outFile.close();
 
 	         Process p = Runtime.getRuntime().exec("cmd /c/Project_CD/SFExcels/GSA_Timecard_Monitor.vbs");
-	         p.waitFor();
-	         
-	         Path tempFile1 = FileSystems.getDefault().getPath("C:/Project_CD/SFExcels", "GSA_Procsd_Timecard.xlsm");
-	         Files.deleteIfExists(tempFile1);
+	         int i = p.waitFor();
+	         /*Path tempFile1 = FileSystems.getDefault().getPath("C:/Project_CD/SFExcels", "GSA_Procsd_Timecard.xlsm");
+	         Files.deleteIfExists(tempFile1);*/
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
-		} catch (InterruptedException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
