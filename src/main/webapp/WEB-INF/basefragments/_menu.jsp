@@ -44,6 +44,7 @@
 					Leave</a></li>
 				
 		</ul><br><li><a href="${pageContext.request.contextPath}/projectDetails">Project Details</a></li><br>
+		<li><a href="${pageContext.request.contextPath}/resourceUtilization">Resource Utilization</a></li><br>
 		<li><a href="${pageContext.request.contextPath}/minutesOfMeeting">Minutes of Meeting</a></li><br>
 		<li><a href="${pageContext.request.contextPath}/seatAllocationLink">Seat Allocation Link</a></li><br>
 		<li><a href="${pageContext.request.contextPath}/upcomingEvents">Upcoming Events</a></li><br>
